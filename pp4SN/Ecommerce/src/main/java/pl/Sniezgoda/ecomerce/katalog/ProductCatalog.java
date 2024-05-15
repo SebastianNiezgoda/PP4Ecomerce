@@ -21,6 +21,8 @@ public class ProductCatalog {
         return newProduct.getID();
     }
 
+
+
     public Product getProductBy(String id) {
         return productStorage.getProductBy(id);
     }

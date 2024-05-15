@@ -9,6 +9,13 @@ public class Product {
     private final String description;
     private BigDecimal price;
 
+    public Product(UUID id,String name, String description, BigDecimal price) {
+        this.id = id.toString();
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+
     public Product(UUID id, String name, String description) {
         this.id = id.toString();
         this.name = name;

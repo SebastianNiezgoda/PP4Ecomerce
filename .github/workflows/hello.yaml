@@ -4,5 +4,11 @@ jobs:
   HelloWorld:
     runs-on: ubuntu-latest
     steps:
-      -run: echo "Robota mamy kaca"
-      -run: "ls -la"
+      - run: echo "Robota mamy kaca"
+      - run: echo "running on ${{runner.os}}"
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: "ls -la"
+      - run: "tree ./"
+      
+      
